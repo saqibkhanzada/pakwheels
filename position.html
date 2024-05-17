@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        .col{
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+            margin: 5px;
+        }
+        .col .nestedCol {
+            height: 50px;
+            width: 50px;
+            border: 1px solid red;
+        }
+        .n1{
+            background-color: pink;
+            position: absolute;
+            top: 70px;
+        }
+        .n2{
+            background-color: indigo;
+            position: relative;
+            left: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+
+            </div>
+            <div class="col">
+                <div class="nestedCol n1"></div>
+                <div class="nestedCol n2"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
